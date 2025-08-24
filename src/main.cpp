@@ -163,5 +163,8 @@ int main(int argc, char *argv[])
     SDL_DestroyWindow(window);
     SDL_DestroyRenderer(renderer);
     SDL_Quit();
+    IMG_Quit();
+    TTF_Quit();
+    Mix_Quit();
     return 0;
 }

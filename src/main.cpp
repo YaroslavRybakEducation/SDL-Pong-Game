@@ -55,11 +55,6 @@ int main(int argc, char *argv[])
         cout << "Failed to initlialize TTF. Error: " << TTF_GetError() << endl;
     }
 
-    if (!(Mix_Init(MIX_INIT_OGG) & MIX_INIT_OGG))
-    {
-        cout << "Failed to initialize Mix. Error: " << Mix_GetError() << endl;
-    }
-
     if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) > 0)
     {
         cout << "Failed to initialize Mix. Error: " << Mix_GetError() << endl;
